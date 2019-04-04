@@ -50,7 +50,7 @@ public class CvSelenium {
 		driver.findElement(By.xpath("//a[@id='MainContent_EditCVDetails']")).click();//edit details before sending your cv
 		driver.findElement(By.xpath("//a[@class='showCvCoverPage']")).click();//edit your CV with adding cover letter and more
 		
-		String cvLetter=StoreTextFile.readFileAsString();//cover letter
+		String cvLetter=StoreTextFile.readFileAsString();//read your cover letter into a string
 		
 		//cover letter body
 		driver.findElement(By.xpath("//textarea[@id='MainContent_Details_coverPage']")).sendKeys(cvLetter);
