@@ -1,2 +1,2 @@
 # Selenium-drushim
-Sending your CV through drushim website using Selenium Web Driver
+Send your CV through drushim website using Selenium Web Driver
