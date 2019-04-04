@@ -25,6 +25,7 @@ public class CvSelenium {
 		//the job link page on drushim
 		baseUrl = "https://www.drushim.co.il/job/17792439/caa4c723/?utm_source=alerts&utm_campaign=cv_alerts&utm_medium=email&utm_content=gmail.com&ref=34";
 		
+		//chrome driver path
 		System.setProperty("webdriver.chrome.driver", "C:\\Users\\123\\Documents\\eclipse-workspace\\SeleniumWD2Tutorial\\src\\tutorialselenium\\chromedriver.exe");
 		driver = new ChromeDriver();;
 
@@ -40,8 +41,8 @@ public class CvSelenium {
 		driver.findElement(By.xpath("//a[@class='stdButton orangeBg roundCorners sendCV']")).click();//click on 'Send CV'
 		driver.findElement(By.xpath("//a[@href='javascript:ShowLoginContainer();']")).click();//click if you are already a registered member 
 
-		driver.findElement(By.xpath("//input[@id='MainContent_SignUp_Login_EmailText']")).sendKeys("uribe1927@gmail.com");//your email	
-		driver.findElement(By.xpath("//input[@id='MainContent_SignUp_Login_PasswordText']")).sendKeys("uriberg2");//your password
+		driver.findElement(By.xpath("//input[@id='MainContent_SignUp_Login_EmailText']")).sendKeys("<your email>");//your email	
+		driver.findElement(By.xpath("//input[@id='MainContent_SignUp_Login_PasswordText']")).sendKeys("<your password>");//your password
 		
 		Thread.sleep(2000);
 		
@@ -63,7 +64,7 @@ class StoreTextFile {
 	
 	public static String readFileAsString()throws Exception {
 	// The name of the file to open.
-    String fileName = "C:\\Users\\123\\Documents\\udemy\\Selenium\\Autoit\\cv\\CvTextFile";
+    String fileName = "<cover letter text file to open>";
 
     // This will reference one line at a time
     String line = null;
