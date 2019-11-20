@@ -23,7 +23,7 @@ public class CvSelenium {
 	@BeforeClass
 	public void beforeClass() throws MalformedURLException {
 		//the job link page on drushim
-		baseUrl = "https://www.drushim.co.il/job/17792439/caa4c723/?utm_source=alerts&utm_campaign=cv_alerts&utm_medium=email&utm_content=gmail.com&ref=34";
+		baseUrl = "<job post direct link>";
 		
 		//chrome driver path
 		System.setProperty("webdriver.chrome.driver", "C:\\Users\\123\\Documents\\eclipse-workspace\\SeleniumWD2Tutorial\\src\\tutorialselenium\\chromedriver.exe");
